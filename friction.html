@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UPI to Blockchain Transaction</title>
+  <link rel="stylesheet" href="friction.css">
+</head>
+<body>
+  <div class="container">
+    <h1>UPI to Blockchain Transfer</h1>
+
+    <!-- UPI Transaction Section -->
+    <div class="transaction-form upi-section">
+      <h2>UPI Transaction</h2>
+      <form id="upiForm">
+        <label for="upiSender">UPI ID (Sender):</label>
+        <input type="text" id="upiSender" required>
+
+        <label for="upiReceiver">UPI ID (Receiver):</label>
+        <input type="text" id="upiReceiver" required>
+
+        <label for="upiAmount">Amount:</label>
+        <input type="number" id="upiAmount" required>
+
+        <button type="submit">Submit UPI Transaction</button>
+      </form>
+
+      <div class="upi">
+        <h2>UPI Transaction Details</h2>
+        <ul id="upiTransactionDetails"></ul>
+      </div>
+    </div>
+
+    <!-- Blockchain Transaction Section -->
+    <div class="transaction-form blockchain-section">
+      <h2>Blockchain Transaction Record</h2>
+      <ul id="blockchainList"></ul>
+    </div>
+  </div>
+
+  <script src="friction.js"></script>
+</body>
+</html>

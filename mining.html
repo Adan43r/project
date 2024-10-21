@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Mining Simulator</title>
+    <link rel="stylesheet" href="mining.css">
+</head>
+<body>
+    <header>
+        <h1>Blockchain Mining Simulator</h1>
+        <p>Simulate blockchain mining and transaction validation.</p>
+    </header>
+
+    <main>
+        <section>
+            <div class="miner-info">
+                <label for="minerAddress">Miner Address:</label>
+                <input type="text" id="minerAddress" placeholder="Enter your address to receive mining rewards">
+            </div>
+            <button id="mineButton">Start Mining</button>
+            <p id="statusMessage"></p>
+        </section>
+
+        <section>
+            <h2>Blockchain Status</h2>
+            <div id="blockchainOutput"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Blockchain Mining Simulator &copy; 2024</p>
+    </footer>
+
+    <script src="mining.js"></script>
+</body>
+</html>

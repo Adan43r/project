@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPI & Crypto Transaction</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="payment.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Transaction Portal</h1>
+        <p>Secure UPI & Cryptocurrency Transactions via Blockchain</p>
+    </header>
+
+    <main>
+        <section class="transaction-form">
+            <h2>Make a Transaction</h2>
+            <form id="transactionForm">
+                <div class="form-group">
+                    <label for="paymentMethod">Payment Method</label>
+                    <select id="paymentMethod" name="paymentMethod" required>
+                        <option value="upi">UPI</option>
+                        <option value="crypto">Cryptocurrency</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="upiId">UPI ID (for UPI Payments)</label>
+                    <input type="text" id="upiId" name="upiId" placeholder="Enter UPI ID">
+                </div>
+
+                <div class="form-group">
+                    <label for="cryptoWallet">Crypto Wallet Address (for Crypto Payments)</label>
+                    <input type="text" id="cryptoWallet" name="cryptoWallet" placeholder="Enter Wallet Address">
+                </div>
+
+                <div class="form-group">
+                    <label for="amount">Amount</label>
+                    <input type="number" id="amount" name="amount" placeholder="Enter Amount" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cryptoType">Cryptocurrency Type (for Crypto Payments)</label>
+                    <select id="cryptoType" name="cryptoType">
+                        <option value="bitcoin">Bitcoin</option>
+                        <option value="ethereum">Ethereum</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+
+                <button type="submit">Submit Transaction</button>
+            </form>
+        </section>
+
+        <section class="transaction-history">
+            <h2>Last 3 Transactions</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Transaction ID</th>
+                        <th>Payment Method</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="transactionHistory">
+                    <!-- Transaction history will be dynamically loaded here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Powered by Blockchain Technology | Secure & Decentralized Transactions</p>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

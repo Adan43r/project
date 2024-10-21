@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puducherry Electricity Board</title>
+    <link rel="stylesheet" href="eb bills .css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"/>
+</head>
+<body>
+    <header>
+        <h1>Puducherry Electricity Board</h1>
+        <p>Check Your Electricity Bill and Payments</p>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Check Your Bill</h2>
+            <form id="billForm">
+                <div class="form-group">
+                    <label for="consumerId">Consumer ID</label>
+                    <input type="text" id="consumerId" name="consumerId" placeholder="Enter your Consumer ID" required>
+                </div>
+                <button type="submit">Get Bill</button>
+                <p id="loading" style="display:none;">Loading...</p>
+            </form>
+        </section>
+
+        <section class="result-section">
+            <h2>Your Bill Details</h2>
+            <div id="billDetails"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Powered by Puducherry Electricity Board</p>
+    </footer>
+
+    <script src="eb bills.js"></script>
+</body>
+</html>
